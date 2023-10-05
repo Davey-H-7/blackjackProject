@@ -244,7 +244,7 @@ const GameContainer = () => {
 
     
     return (
-        <div className= "bg-#0369a1">
+        <div class= "bg-gray-900 h-screen">
             <Routes>
                 <Route exact path="/" element={< Welcome setNewUser={setNewUser}/>} />
                 <Route exact path="/blackjack" element={< Blackjack playerHand = {playerHand} dealerHand = {dealerHand} result = {result} handleDeal = {handleDeal} handleStick = {handleStick} handleTwist = {handleTwist} buttons ={buttons} user ={user}/>} />

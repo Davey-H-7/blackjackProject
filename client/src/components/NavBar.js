@@ -8,7 +8,7 @@ const NavBar = () => {
         navigate('/users')
     }
     return (
-        <>
+        <div class = 'bg-black'>
             <ul className='navBarUL'>
                 <li>
 
@@ -18,7 +18,7 @@ const NavBar = () => {
                     <p onClick={handleUsers}>User Stats</p>
                 </li>
             </ul>
-        </>
+        </div>
     )
 }
 
