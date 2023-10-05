@@ -8,7 +8,7 @@ const Instructions = () => {
       
 
     return(
-        <Popup trigger={<button className="bjBtns"> Rules</button>} position="bottom left" >
+        <Popup trigger={<button class ='bg-black-600 hover:bg-red-700 text-white text-sm px-3 py-1  border rounded-full border-2' > Rules</button>} position="bottom left" >
           <div>
             <h1> "House" Rules:</h1>
             <ul>

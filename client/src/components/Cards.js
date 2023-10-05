@@ -4,9 +4,7 @@ const Cards = ({card}) => {
 
     return(
         <>
-         <div className='cardLayer'>
-            <img src = {card.image} className="cardPic"/>
-        </div>
+            <img class = 'h-36' src = {card.image}/>
         </>
     )
 }
