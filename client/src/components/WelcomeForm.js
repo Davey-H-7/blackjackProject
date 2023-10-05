@@ -32,7 +32,7 @@ const WelcomeForm = ({setNewUser}) => {
         window.location.href = 'http://localhost:3000/blackjack';
     }
 return(
-        <div class = 'bg-green-800 px-10 py-10 flex flex-col justify-center items-center w-50% rounded-[20px] max-w-50% m-auto border-solid'>
+        <div class = 'bg-green-800 px-10 py-10 flex flex-col justify-center items-center w-50% rounded-[20px] max-w-50% m-auto border-solid border-2 border-white-500'>
 
    
         <form  onSubmit={handleSubmit} class='flex flex-col justify-center items-center'>

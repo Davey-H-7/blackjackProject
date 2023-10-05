@@ -7,15 +7,26 @@ const NavBar = () => {
     const handleUsers = () => {
         navigate('/users')
     }
-    return (
-        <div class = 'bg-black'>
-            <ul className='navBarUL'>
-                <li>
 
-                    <a href='/'>Home</a>
+    const handleHome = () => {
+      navigate('/')
+    }
+
+    const handlePlay = () => {
+        navigate('/blackjack')
+      }
+
+    return (
+        <div class = 'bg-gray-900 '>
+            <ul class='flex justify-evenly'>
+                <li>
+                    <p onClick={handleHome} class ='text-fuchsia-500 cursive text-xl hover:text-fuchsia-500 cursor-pointer'>Home</p>
                 </li>
-                <li className='userStatLink'>
-                    <p onClick={handleUsers}>User Stats</p>
+                <li>
+                    <p onClick={handlePlay} class ='text-fuchsia-500 cursive text-xl hover:text-fuchsia-500 cursor-pointer'>Play</p>
+                </li>
+                <li>
+                    <p onClick={handleUsers} class ='text-fuchsia-500 cursive text-xl hover:text-fuchsia-500 cursor-pointer'>Stats</p>
                 </li>
             </ul>
         </div>

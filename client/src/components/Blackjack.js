@@ -23,7 +23,7 @@ const Blackjack = ({playerHand, dealerHand, result, handleDeal, handleStick, han
             </div>
 
             <div className='flex flex-col justify-center w-4/5 m-auto'>
-                <div class = 'bg-green-800 px-10 flex flex-col justify-center items-center rounded-[20px] w-full h-52 m-auto border-solid border-2 border-white-500 my-5'>
+                <div class = 'bg-green-900 px-10 flex flex-col justify-center items-center rounded-[20px] w-full h-52 m-auto border-solid border-2 border-white-500 my-5'>
                     <h1 class='text-white  text-2xl font-bold'>{user.name}</h1>
                     <div class = 'flex justify-center'>
                         {playerNode}
@@ -34,7 +34,7 @@ const Blackjack = ({playerHand, dealerHand, result, handleDeal, handleStick, han
                 <h1 class ='text-white text-2xl font-bold flex justify-center'> {result} </h1>
             
 
-                <div class = 'bg-green-800 px-10 flex flex-col justify-center items-center rounded-[20px] w-full h-52 m-auto border-solid border-2 border-white my-5'>
+                <div class = 'bg-green-900 px-10 flex flex-col justify-center items-center rounded-[20px] w-full h-52 m-auto border-solid border-2 border-white my-5'>
                     <div class = 'flex justify-center'> 
                         {dealerNode}
                     </div>
