@@ -1,7 +1,6 @@
 import React from 'react';
 import Cards from './Cards';
 import Instructions from './Instructions';
-import './blackjack.css'
 
 const Blackjack = ({playerHand, dealerHand, result, handleDeal, handleStick, handleTwist, buttons, user}) => {
     
@@ -18,7 +17,7 @@ const Blackjack = ({playerHand, dealerHand, result, handleDeal, handleStick, han
         <>
             <div className='blackJackButtons'>
                 <Instructions/>
-                <button className="bjBtns" onClick={handleDeal}>Deal </button>
+                <button className="bjBtns" onClick={handleDeal} disabled = {!buttons}>Deal </button>
                 <button className="bjBtns" onClick={handleStick} disabled = {buttons}>Stick</button>
                 <button className="bjBtns" onClick={handleTwist} disabled = {buttons} >Twist</button>
             </div>

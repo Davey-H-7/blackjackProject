@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import { getDeck, dealDeck }  from '../components/GameService';
+import { getDeck }  from '../components/GameService';
 import Welcome from '../components/Welcome.js'
 import Blackjack from '../components/Blackjack.js'
 import Users from '../components/Users.js'
-import Instructions from '../components/Instructions';
+
 import {postResult} from '../components/UserService'
-import './gamecontainer.css'
+
 
 
 const GameContainer = () => {
@@ -84,7 +84,11 @@ const GameContainer = () => {
 
     const dealCards = () => { 
 
-        setButtons(false)
+        if(fullDeck.length <= 10){
+            getDeck()
+            .then((deck) => {
+            setFullDeck(deck.cards)})}
+
 
         setResult('')
         setPlayerHand([])
@@ -95,7 +99,7 @@ const GameContainer = () => {
         const newDealerHand = [...dealerHand]
 
         if (playerHand.length < 2 && dealerHand.length < 1){
-       
+            setButtons(false)
 
             let poppedCard = newDeck.pop()
             newPlayerHand.push(poppedCard)
@@ -240,7 +244,7 @@ const GameContainer = () => {
 
     
     return (
-        <div className='mainContainer'>
+        <div className= "bg-#0369a1">
             <Routes>
                 <Route exact path="/" element={< Welcome setNewUser={setNewUser}/>} />
                 <Route exact path="/blackjack" element={< Blackjack playerHand = {playerHand} dealerHand = {dealerHand} result = {result} handleDeal = {handleDeal} handleStick = {handleStick} handleTwist = {handleTwist} buttons ={buttons} user ={user}/>} />

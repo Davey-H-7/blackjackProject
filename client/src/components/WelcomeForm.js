@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import {getUser, addUser, updateUser} from './UserService'
 import { useNavigate } from "react-router-dom";
-import './welcomeform.css'
 
 
 
@@ -36,7 +35,7 @@ return(
         <>
 
         <form onSubmit={handleSubmit}>
-        <h4> Please enter your username: </h4>
+        <h4 className = 'text-3xl font-bold underline'> Please enter your username: </h4>
         <label htmlFor='name'></label>
         <input type='text' id='name' name='name' value={name} require onChange={handleNameChange}/>
         <input type='submit' name='submit' value='Save'/>
