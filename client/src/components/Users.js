@@ -21,9 +21,11 @@ const Users = ({allUsers, user}) => {
 
 
     return(
-        <div className='usersBox'>
-            <h2><u>{user.name}</u></h2>
-            {userElements}
+        <div class = 'bg-green-800 px-10 py-5 flex flex-col justify-center items-center w-1/2 rounded-[20px] max-w-50% m-auto border-solid border-2 border-white-500'>
+            <h2 class ='text-white text-3xl'>Player:</h2>
+            <h2 class ='text-white text-3xl'>{user.name}</h2>
+            <h3 class='text-white text-2xl'> Recent Game Records:</h3>
+            {userElements.slice(0,20)}
         </div>
 
     )

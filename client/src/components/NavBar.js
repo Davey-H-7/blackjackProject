@@ -20,13 +20,13 @@ const NavBar = () => {
         <div class = 'bg-gray-900 '>
             <ul class='flex justify-evenly'>
                 <li>
-                    <p onClick={handleHome} class ='text-fuchsia-500 cursive text-xl hover:text-fuchsia-500 cursor-pointer'>Home</p>
+                    <p onClick={handleHome} class ='text-fuchsia-500 cursive text-xl hover:text-white cursor-pointer'>Home</p>
                 </li>
                 <li>
-                    <p onClick={handlePlay} class ='text-fuchsia-500 cursive text-xl hover:text-fuchsia-500 cursor-pointer'>Play</p>
+                    <p onClick={handlePlay} class ='text-fuchsia-500 cursive text-xl hover:text-white cursor-pointer'>Play</p>
                 </li>
                 <li>
-                    <p onClick={handleUsers} class ='text-fuchsia-500 cursive text-xl hover:text-fuchsia-500 cursor-pointer'>Stats</p>
+                    <p onClick={handleUsers} class ='text-fuchsia-500 cursive text-xl hover:text-white cursor-pointer'>Stats</p>
                 </li>
             </ul>
         </div>
